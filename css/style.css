@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.nav .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav .logo img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.nav .logo h2{
+    font-size: 16px;
+    line-height: 13px;
+}
+
+.nav .logo span{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.nav .menu{
+    display: flex;
+}
+
+.nav .menu .list{
+    margin: 0px 10px;
+}
+
+.nav .menu .list a{
+ text-decoration: none;
+ color: rgba(0, 0, 0, 0.459);   
+}
+
+.nav .menu .list a.active{
+    color: black;
+}
+
+.nav .icon{
+    display: flex;
+}
+.nav .icon .icons{
+    margin: 0px 5px;
+    font-size: 25px;
+}
+
+
+.hero{
+    padding: 50px 50px;
+}
+
+.hero h5{
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.hero h2{
+    margin-bottom: 40px;
+    font-size: 45px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero .products{
+    display: flex;
+    padding: 10px;
+}
+
+.hero .products .list{
+    margin: 0px 10px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.hero .products .list a{
+    /* text-decoration: none; */
+    color: rgb(41, 111, 216);
+    font-weight: 600;
+    font-size: 20px;
+}
+.hero .products .list ion-icon{
+    transform: rotate(-45deg);
+    margin-bottom: -3px;
+    font-size: 20px;
+}
+
+.hero .below{
+    margin-top: 20px;
+}
+.hero .below.a{
+    margin-top: 40px;
+    font-style: italic;
+}
+
+.hero .cta{
+    padding: 15px 40px;
+    background: transparent;
+    border: none;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin: 40px 0px;
+    font-size: 18px;
+}
+.hero .cta:hover{
+    background: black;
+    color: white;
+    transition:all 0.3s  ease;
+    transform: translateX(5px);
+}
+
+.hero .cta ion-icon, .hero .footer a ion-icon{
+    transform: rotate(-45deg);
+    margin-bottom: -3px;
+    font-size: 16px;
+}
+
+.hero .footer{
+    margin-top: 30px;
+}
+.hero .footer h1{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.hero .footer a{
+    color: black;
+}
+
+.hero .products.b a{
+    color: black;
+    padding: 20px 10px;
+    margin-left: -10px;
+}
