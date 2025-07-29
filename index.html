@@ -11,6 +11,7 @@
 <body>
 
 
+
     <div class="nav" data-aos="fade-down" data-aos-duration="1500">
         <div class="row">
             <div class="logo">
@@ -25,7 +26,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row phone">
             <div class="menu">
                 <div class="list"><a class="active" href="">Home</a></div>
                 <div class="list"><a href="">Abdout</a></div>
@@ -33,14 +34,21 @@
                 <div class="list"><a href="">Contact</a></div>
             </div>
         </div>
-        <div class="row">
+        <div class="row phone b">
             <div class="icon">
-            <div class="icons"><ion-icon name="logo-github"></ion-icon></div>
-            <div class="icons"><ion-icon name="logo-twitter"></ion-icon></div>
-            <div class="icons"><ion-icon name="logo-linkedin"></ion-icon></div>
+            <div onclick="github()" class="icons"><ion-icon name="logo-github"></ion-icon></div>
+            <div onclick="twitter()" class="icons"><ion-icon name="logo-twitter"></ion-icon></div>
+            <div onclick="linkedin()" class="icons"><ion-icon name="logo-linkedin"></ion-icon></div>
             </div>
         </div>
+
+        <div class="menua" onclick="menu()">
+            <ion-icon name="menu"></ion-icon>
+        </div>
     </div>
+
+    <div class="pop" ></div>
+
 
 
     <!-- hero -->
@@ -78,7 +86,7 @@
                       <div class="products b">
             <div class="list"><a target="_blank" href="https://github.com/abdulazeezbz"> Github<ion-icon name="arrow-forward"></ion-icon></a></div>
             <div class="list"><a target="_blank" href="https://www.linkedin.com/in/abdulazeezabz/"> Linkedin<ion-icon name="arrow-forward"></ion-icon></a></div>
-            <div class="list"><a target="_blank" href="https://rate-home.vercel.app/"> Twitter<ion-icon name="arrow-forward"></ion-icon></a></div>
+            <div class="list"><a target="_blank" href="https://x.com/abdoulazeez_abz"> Twitter<ion-icon name="arrow-forward"></ion-icon></a></div>
         </div>
             </div>
 
@@ -92,6 +100,51 @@
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script>
     AOS.init();
+    </script>
+
+    <script>
+    
+    var m = 0
+        const menu = ()=>{
+            
+
+            if (m==0) {
+                // Open
+                document.querySelector(".nav .phone").style.display= "flex";
+                document.querySelector(".nav .phone.b").style.display= "flex";
+                document.querySelector(".pop").style.display= "flex";
+
+                // set m = 1
+                m = 1
+                console.log(m)
+            }else {
+                if(m == 1){
+                // close
+                document.querySelector(".nav .phone").style.display= "none";
+                document.querySelector(".nav .phone.b").style.display= "none";
+                document.querySelector(".pop").style.display= "none";
+
+                m = 0
+
+                
+            }
+            }
+        }
+
+
+
+        const github = ()=>{
+            window.location.href = 'https://github.com/abdulazeezbz'
+        }
+
+
+        const linkedin = ()=>{
+            window.location.href = 'https://www.linkedin.com/in/abdulazeezabz/'
+        }
+
+         const twitter = ()=>{
+            window.location.href = 'https://x.com/abdoulazeez_abz'
+        }
     </script>
 </body>
 </html>
