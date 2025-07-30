@@ -115,6 +115,18 @@ body{
     border: 1px solid black;
     margin: 40px 0px;
     font-size: 18px;
+    cursor: pointer;
+}
+
+
+.hero.about .cta{
+    padding: 12px 30px;
+    background: transparent;
+    border: none;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin: 0px 0px;
+    font-size: 18px;
 }
 .hero .cta:hover{
     background: black;
@@ -123,7 +135,7 @@ body{
     transform: translateX(5px);
 }
 
-.hero .cta ion-icon, .hero .footer a ion-icon{
+.hero .cta ion-icon, .hero .footer a ion-icon, ion-icon.top{
     transform: rotate(-45deg);
     margin-bottom: -3px;
     font-size: 16px;
@@ -151,6 +163,57 @@ body{
     font-weight: bold;
     display: none;
 }
+
+
+
+.hero.about h2{
+    text-align: center;
+}
+.hero.about h6{
+    text-align: center;
+    font-size: 16px;
+    margin-top: -30px;
+    font-weight: 400;
+}
+
+.hero.about h6 a{
+    color: black;
+}
+
+.hero.about .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.hero.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero.about .container img{
+    width: 95%;
+    border-radius: 20px;
+}
+.hero.about .container .column{
+    width: 50%;
+    /* margin: 5px; */
+}
+
+.hero.about .container h6{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.hero.about .container .column:first-child{
+    width: 50%;
+    /* margin: 5px; */
+}
+
 
 @media screen and (max-width:900px) {
     .nav .phone{
@@ -228,7 +291,27 @@ body{
     }
 
 
-    
+    .hero.about .container{
+        margin-top: 40px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+}
+.hero.about .container .column{
+    width: 100%;
+}
+
+.hero.about .container h6:first-child{
+    margin-top: 20px;
+}
+
+
+    .hero.about .container .column img{
+    width: 350px;
+    /* margin-left: -80px; */
+}
 }
 
 @keyframes open {
