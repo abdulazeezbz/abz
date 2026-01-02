@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy - Flashlight App</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    h1, h2 {
+      color: #222;
+    }
+
+    h2 {
+      margin-top: 25px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .highlight {
+      background: #f1f5ff;
+      padding: 12px;
+      border-left: 4px solid #4a6cff;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>Flashlight App</p>
+  </header>
+
+  <main>
+    <p><strong>Effective Date:</strong> <span id="date"></span></p>
+
+    <p>
+      This Privacy Policy explains how <strong>Flashlight App</strong> ("we", "our", or "us")
+      uses permissions and handles user information.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+    <p>
+      We do <strong>not</strong> collect, store, or share any personal information.
+      Our flashlight app works completely offline.
+    </p>
+
+    <h2>2. Camera Permission</h2>
+    <div class="highlight">
+      <p>
+        Our app requests access to your device’s <strong>camera</strong> solely to
+        turn on and control the flashlight (camera flash).
+      </p>
+    </div>
+
+    <ul>
+      <li>The camera is <strong>never used</strong> to take photos or record videos</li>
+      <li>No camera data is collected or stored</li>
+      <li>No camera data is shared with any third party</li>
+    </ul>
+
+    <h2>3. Data Sharing</h2>
+    <p>
+      We do not share any data with third parties because the app does not collect
+      any personal or sensitive user data.
+    </p>
+
+    <h2>4. Internet Usage</h2>
+    <p>
+      This app does not require an internet connection and does not send data
+      to any server.
+    </p>
+
+    <h2>5. Children’s Privacy</h2>
+    <p>
+      Our app does not knowingly collect any data from children under the age of 13.
+      Since no data is collected, it is safe for all age groups.
+    </p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time.
+      Any changes will be posted on this page.
+    </p>
+
+    <h2>7. Contact Us</h2>
+    <p>
+      If you have any questions about this Privacy Policy, you can contact us at:
+    </p>
+    <p>
+      <strong>Email:</strong> your-email@example.com
+    </p>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Flashlight App. All rights reserved.
+  </footer>
+
+  <script>
+    const today = new Date();
+    document.getElementById("date").textContent = today.toDateString();
+    document.getElementById("year").textContent = today.getFullYear();
+  </script>
+
+</body>
+</html>
